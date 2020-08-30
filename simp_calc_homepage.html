@@ -1,0 +1,94 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="utf-8"/>
+<script src="simp_calc_script.js"></script>
+
+<head>
+    <style>
+        .calc_buttons
+        {
+            position: relative;
+            font-size: 15px;
+            top: 50px;
+            left: 35%;
+            padding: 5px;
+            
+        }
+        .num_display
+        {
+            border: 1px solid gray;
+            width: 300px;
+            margin-bottom: 5px;
+        }
+        #calc_disp
+        {
+            padding: 5px;
+            height: 15px;
+        }
+        #btn_4
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #btn_eq
+        {
+            width: 120px;
+            margin-top: 5px;
+        }
+        #btn_clear
+        {
+            width: 115px;
+        }
+        .op_buttons
+        {
+            position: absolute;
+            left: 30%;
+            top: 120px;
+        }
+
+        .op_btns
+        {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            left: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+<div class="calc_buttons">
+    <div class="num_display">
+        <p id="calc_disp"></p>       
+    </div>
+    <div class="btn_row1">
+        <button id="btn_1" onclick="num_button_press(this.innerHTML)">1</button>
+        <button id="btn_2" onclick="num_button_press(this.innerHTML)">2</button>
+        <button id="btn_3" onclick="num_button_press(this.innerHTML)">3</button>
+        <button id="btn_plus" onclick="op_button_press(this.innerHTML)">+</button>
+        <button id="btn_minus" onclick="op_button_press(this.innerHTML)">-</button>  
+    </div>
+    <div class="btn_row2">
+        <button id="btn_4" onclick="num_button_press(this.innerHTML)">4</button>
+        <button id="btn_5" onclick="num_button_press(this.innerHTML)">5</button>
+        <button id="btn_6" onclick="num_button_press(this.innerHTML)">6</button>
+        <button id="btn_mult" onclick="op_button_press(this.innerHTML)">*</button>
+        <button id="btn_divide" onclick="op_button_press(this.innerHTML)">/</button>
+    </div>
+        <button id="btn_7" onclick="num_button_press(this.innerHTML)">7</button>
+        <button id="btn_8" onclick="num_button_press(this.innerHTML)">8</button>
+        <button id="btn_9" onclick="num_button_press(this.innerHTML)">9</button>
+        <button id="btn_left_paren" onclick="op_button_press(this.innerHTML)">(</button>
+        <button id="btn_left_paren"onclick="op_button_press(this.innerHTML)">)</button>
+    <div class=btn_row3>
+        <button id="btn_0" onclick="num_button_press(this.innerHTML)">0</button>
+        <button id="btn_eq" onclick="equal_button_press()">=</button>
+        <button id="btn_clear" onclick="clear_button_press()">clear</button>
+    </div>
+</div>
+
+</body>
+
+</html>
